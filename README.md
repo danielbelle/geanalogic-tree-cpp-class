@@ -21,7 +21,7 @@ e listas.
 2. Definir relações (pai, mãe, filho, filha).
 3. Exibir ASCENDENTES e DESCENDENTES de uma pessoa.
 4. Listar toda a árvore a partir de um ancestral.
-5. Buscar pessoa pelo nome. (hash?)
+5. Buscar pessoa pelo nome.
 
 ## Funcionalidades Opcionais
 
@@ -57,3 +57,31 @@ Pessoa
 
 Obs: primo é parente de quarto grau. Tio é parente de terceiro grau. Avô é
 parente de segundo grau. Pai é parente de primeiro grau.
+
+# Abordagem à solução:
+
+Separando-as em:
+
+- Funcionais F1 a F5
+- Opcionais O1 a O4
+
+# TODO
+
+- [ ] Estudar N-ary tree / generic tree;
+- [ ] Ver como aplicar struct na solução;
+- [ ] Entender para que ela é otimizada;
+- [ ] Como montar a estrutura da arvore generica em c++;
+- [ ] Entender como fazer um CRUD na arvore generica;
+- [ ] Adicionar pessoa (nome, data nasci e genero) (F1);
+- [ ] Adicionar relacional (cima ou baixo) node (F2);
+- [ ] Encontrar pessoa (F5);
+- [ ] Exibir todos os acima e abaixo da pessoa pesquisada (F3);
+- [ ] Exibir todos os descendentes a partir da pessoa pesquisada (F4);
+- [ ] Criar arquivo com dados para alimentar a generic tree (O4);
+- [ ] Distancia entre 2 parentes (O1);
+- [ ] Mostrar gerações por nível (filhos ou netos ou bisnetos) (O3);
+- [ ] Contagem de descendentes diretos e indiretos (O2);
+- [ ] Ajustar testes unitários;
+- [ ] Testes de funcionamento completo;
+- [ ] Testes de feature;
+- [ ] Finalizar Documentação;
