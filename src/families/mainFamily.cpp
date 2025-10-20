@@ -4,23 +4,31 @@
 
 using namespace std;
 
-struct Pessoa {
-  string nome;
-  string dataNascimento;
-  char genero; // 'M' ou 'F'
-
-  Pessoa* pai;  // Ponteiro para o pai
-  vector<Pessoa*> filhos; // Lista dinâmica de filhos
-};
+import struct Familia;
+import struct Pessoa;
 
 // Função para criar uma nova pessoa
-Pessoa* criarPessoa(const string& nome, const string& data, char genero) {
+Pessoa* criarPessoa(const string& nome, const string& data, char genero, Familia* familiaOrigem) {
+
   Pessoa* novaPessoa = new Pessoa;
+
   novaPessoa->nome = nome;
   novaPessoa->dataNascimento = data;
   novaPessoa->genero = genero;
-  novaPessoa->pai = nullptr;
+  novaPessoa->familiaOrigem = familiaOrigem;
+
   return novaPessoa;
+}
+
+Familia* criarFamilia(Pessoa* pai, Pessoa* mae, Familia* familiaOrigem) {
+
+  Familia* novaFamilia = new Familia;
+
+  novaFamilia->pai = pai;
+  novaFamilia->mae = mae;
+  novaFamilia->familiaOrigem = familiaOrigem;
+
+  return novaFamilia;
 }
 
 // Função para adicionar filho

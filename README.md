@@ -67,10 +67,10 @@ Separando-as em:
 
 # TODO
 
-- [ ] Estudar N-ary tree / generic tree;
-- [ ] Ver como aplicar struct na solução;
-- [ ] Entender para que ela é otimizada;
-- [ ] Como montar a estrutura da arvore generica em c++;
+- [x] Estudar N-ary tree / generic tree tree/florest;
+- [x] Ver como aplicar struct na solução;
+- [x] Entender para que ela é otimizada;
+- [x] Como montar a estrutura da arvore generica em c++;
 - [ ] Entender como fazer um CRUD na arvore generica;
 - [ ] Adicionar pessoa (nome, data nasci e genero) (F1);
 - [ ] Adicionar relacional (cima ou baixo) node (F2);
